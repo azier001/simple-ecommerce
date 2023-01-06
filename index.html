@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/images/azier.png" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Home - Simple Aziercommerce</title>
+  </head>
+  <body>
+    <header>
+      <ul class="nav-list animate__animated animate__backInDown">
+        <li class="image">
+          <img src="/assets/images/Azier_Store1.png" alt="azier store" />
+        </li>
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link">
+            <span class="nav-icon fa fa-home"></span>
+            <span class="nav-text">HOME</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/product/product.html" class="nav-link">
+            <span class="nav-icon fa fa-cart-plus"></span>
+            <span class="nav-text">PRODUCT</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/contact/contact.html" class="nav-link">
+            <span class="nav-icon fa fa-contact-card"></span>
+            <span class="nav-text">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- awal slide -->
+      <article class="container">
+        <div class="content-slide animate__animated animate__backInLeft">
+          <div class="image-slide fade">
+            <img src="/assets/images/bigsale1.jpg" alt="" />
+          </div>
+          <div class="image-slide fade">
+            <img src="/assets/images/bigsale2.jpg" alt="" />
+          </div>
+          <div class="image-slide fade">
+            <img src="/assets/images/bigsale3.jpg" alt="" />
+          </div>
+          <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+          <a class="next" onClick="nextslide(1)">&#10095;</a>
+        </div>
+        <div class="page">
+          <span class="dot" onClick="dotslide(1)"></span>
+          <span class="dot" onClick="dotslide(2)"></span>
+          <span class="dot" onClick="dotslide(3)"></span>
+        </div>
+        <marquee behavior="" direction="right">Big Sale Upto 30%</marquee>
+      </article>
+      <!-- akhir slide -->
+
+      <!-- Top Sales -->
+      <article>
+        <div class="container-product">
+          <h2 class="title animate__animated animate__bounceIn">Top Sales</h2>
+          <!-- Row / Baris -->
+          <div class="row animate__animated animate__backInUp">
+            <!-- Column / kolom -->
+            <div class="col" onclick="buy('Masker', 10000)">
+              <img src="/assets/images/masker2.jpg" alt="" />
+              <h4>Masker</h4>
+            </div>
+            <div class="col" onclick="buy('kaos' , 40000)">
+              <img src="/assets/images/kaos1.jpg" alt="" />
+              <h4>Kaos</h4>
+            </div>
+            <div class="col" onclick="buy('celana modis' , 90000)">
+              <img src="/assets/images/product-3.jpg" alt="" />
+              <h4>Celana Modis</h4>
+            </div>
+            <div class="col" onclick="buy('kaos puma' , 45000)">
+              <img src="/assets/images/product-4.jpg" alt="" />
+              <h4>Kaos Puma</h4>
+            </div>
+            <div class="col" onclick="buy('sepatu keren' , 130000)">
+              <img src="/assets/images/product-5.jpg" alt="" />
+              <h4>Sepatu Keren</h4>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <div
+      class="chat fa fa-brands fa-square-whatsapp"
+      onclick="chat()"
+      id="chat"
+    ></div>
+    <footer>
+      <p>Copyrigt &copy; <span id="year"></span>. AZIER STORE</p>
+    </footer>
+
+    <script src="/assets/source.js"></script>
+  </body>
+</html>

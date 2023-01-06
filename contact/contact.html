@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/images/azier.png" />
+    <link rel="stylesheet" href="/contact/contactStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Contact - Simple Aziercommerce</title>
+  </head>
+  <body>
+    <header>
+      <ul class="nav-list animate__animated animate__backInDown">
+        <li class="image">
+          <img src="/assets/images/Azier_Store1.png" alt="azier store" />
+        </li>
+        <li class="nav-item">
+          <a href="/index.html" class="nav-link">
+            <span class="nav-icon fa fa-home"></span>
+            <span class="nav-text">HOME</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/product/product.html" class="nav-link">
+            <span class="nav-icon fa fa-cart-plus"></span>
+            <span class="nav-text">PRODUCT</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="/contact/contact.html" class="nav-link">
+            <span class="nav-icon fa fa-contact-card"></span>
+            <span class="nav-text">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <article class="container">
+        <div class="row">
+          <div class="col animate__animated animate__backInLeft">
+            <div id="contact" class="card">
+              <h2>CONTACT ME</h2>
+              <div class="contact-info">
+                <div>
+                  <i class="fas fa-map-marker-alt"></i>Jl. Taman Tawang,
+                  Semarang Utara, Jawa Tengah
+                </div>
+                <div>
+                  <i class="fas fa-envelope"></i>mutaahmad2711@gmail.com
+                </div>
+                <div><i class="fas fa-phone"></i>+6281 2345 3244</div>
+                <div>
+                  <i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="col animate__animated animate__backInRight">
+            <div class="profile card">
+              <h2>AHMAD AJIR</h2>
+              <figure>
+                <img src="/assets/images/foto_nobg.png" />
+                <figcaption>Owner Azier Store</figcaption>
+              </figure>
+            </div>
+          </aside>
+        </div>
+      </article>
+    </main>
+
+    <div
+      class="chat fa fa-brands fa-square-whatsapp"
+      onclick="chat()"
+      id="chat"
+    ></div>
+
+    <footer>
+      <p>Copyrigt &copy; <span id="year"></span>. AZIER STORE</p>
+    </footer>
+
+    <script src="/assets/source.js"></script>
+  </body>
+</html>
