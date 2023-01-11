@@ -1,15 +1,15 @@
-document.getElementById("year").innerHTML = new Date().getFullYear();
+document.getElementById('year').innerHTML = new Date().getFullYear();
 
 function buy(product_name, product_price) {
   const message = `Halo saya mau beli ${product_name} ~ ${product_price}`;
-  const whatsapp = `https://wa.me/62895329973449?text=${message}`;
-  open(whatsapp, "_blank");
+  const whatsapp = `https://wa.me/6285860860847?text=${message}`;
+  open(whatsapp, '_blank');
 }
 
 function chat() {
   const message = `Halo admin saya mau nanya nih`;
-  const whatsapp = `https://wa.me/62895329973449?text=${message}`;
-  open(whatsapp, "_blank");
+  const whatsapp = `https://wa.me/6285860860847?text=${message}`;
+  open(whatsapp, '_blank');
 }
 
 let slideIndex = 1;
@@ -25,8 +25,8 @@ function dotslide(n) {
 
 function showSlide(n) {
   let i;
-  let slides = document.getElementsByClassName("image-slide");
-  let dot = document.getElementsByClassName("dot");
+  let slides = document.getElementsByClassName('image-slide');
+  let dot = document.getElementsByClassName('dot');
 
   if (n > slides.length) {
     slideIndex = 1;
@@ -35,14 +35,14 @@ function showSlide(n) {
     slideIndex = slides.length;
   }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = 'none';
   }
 
   for (i = 0; i < slides.length; i++) {
-    dot[i].className = dot[i].className.replace(" active", "");
+    dot[i].className = dot[i].className.replace(' active', '');
   }
 
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = 'block';
 
-  dot[slideIndex - 1].className += " active";
+  dot[slideIndex - 1].className += ' active';
 }
